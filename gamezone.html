@@ -5,55 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+        #circle1{
+            background-color: black;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: relative;
+  animation-name: rect;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+        }
+        @keyframes rect {
+  0%   {background-color:black; left:100px; top:90px;}
+  100%  {background-color:black; left:100%; top:0px;}
 
+} 
 
-div {
-    width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-direction: reverse;
-  
-  border-radius: 50%
-  
+#circle{
+            background-color:red;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: relative;
+  animation-name: circle;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+        }
+         @keyframes circle {
+  0%   {background-color:red; left:100px; top:90px;}
+  100%  {background-color:red; left:100%; top:0px;} 
+
 }
-
-div {
-    width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-direction: reverse;
-  
-  border-radius: 50%
-  
-}
-div {
-    width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: black;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-delay: 2s;
-  animation-direction: reverse;
-  
-  border-radius: 50%
-  
-}
-       
-
     </style>
 </head>
 <body>
-    <div></div>
-    <div></div>
+    <div id="circle1"></div>
+    <div id="circle"></div>
 </body>
 </html>
